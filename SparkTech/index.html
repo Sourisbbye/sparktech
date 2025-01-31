@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <body>
+        <div class="kapsayıcı">
+            <!-- Menu start -->
+            <div class="menu">
+                <ul>
+                    <li><img src="S.jpg" class="img"></li>
+                </ul>
+    
+                <ul class="liste">
+                    <li class="a"><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> <p>Anasayfa</p></a></li>
+                    <li class="a"><a href="#başlık"><i class="fa-sharp fa-solid fa-bag-shopping"></i> <p>Ürünlerimiz</p></a></li>
+                    <li class="a"><a href="#bas"><i class="fa-solid fa-phone"></i> <p>İletişim</p></a></li>
+                </ul>
+            </div>
+            
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1>En Güvenilir Beyaz Eşya Alım Satımı</h1>
+                <p>En iyi fiyatlarla evinizin ihtiyaçlarını karşılayın. Hemen alışverişe başlayın!</p>
+                <a href="#başlık" class="cta-button">Alışverişe Başla</a>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Ücretsiz Kargo</h3>
+                <p>100$ Üzeri Alışverişlerde</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>2 Yıl Garanti</h3>
+                <p>Tüm Ürünlerde</p>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Güvenli Ödeme</h3>
+                <p>256-bit SSL ile</p>
+            </div>
+        </div>
+    
+    <!-- Menu Finish -->
+
+    <!-- Ürünlerimiz Start -->
+        <!-- Ürünler bölümü üstüne ekle -->
+<div class="product-filters">
+    <select id="price-filter">
+        <option value="">Fiyat Aralığı</option>
+        <option value="0-50">0$ - 50$</option>
+        <option value="50-100">50$ - 100$</option>
+    </select>
+    
+    <select id="category-filter">
+        <option value="">Kategori Seçin</option>
+        <option value="buzdolabi">Buzdolabı</option>
+        <option value="fırın">Fırın</option>
+    </select>
+</div>
+
+
+<div class="anasayfa">
+    <div class="menu1">
+        <h1 id="başlık">Ürünlerimiz</h1>
+    </div>
+    <div class="b2">
+        <!-- Ürün resimleri ve fiyat -->
+        <div class="foto" onclick="openModal('img1')"><img id="img1" src="1.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img2')"><img id="img2" src="2.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img3')"><img id="img3" src="3.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img4')"><img id="img4" src="4.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img5')"><img id="img5" src="5.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img6')"><img id="img6" src="6.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img7')"><img id="img7" src="7.jpg"> <div class="overlay"><p>20$</p></div></div>
+        <div class="foto" onclick="openModal('img8')"><img id="img8" src="8.jpg"> <div class="overlay"><p>20$</p></div></div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<!-- Modal içeriğini güncelle -->
+<div id="modal" class="modal">
+    <div class="modal-body">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <button class="add-to-cart">Sepete Ekle</button>
+    </div>
+</div>
+<!-- Ürünlerimiz Finish -->
+
+
+    <!-- İletişim Start -->
+    <div class="ilet">
+        <div class="b3">
+            <div class="başlık1">
+                <h1 id="bas">İletişim</h1>
+            </div>
+            <div class="b4">
+                <div class="c">
+                    <i class="icon fa-solid fa-phone"></i>
+                    <div class="a">
+                        <p>0541...</p>
+                    </div>
+                </div>
+                <div class="c">
+                    <a href="https://www.instagram.com/hiatussoftware/?igshid=YmMyMTA2M2Y%3D"><i class="icon fa-brands fa-instagram"></i></a>
+                    <div class="a">
+                        <a href="https://www.instagram.com/hiatussoftware/?igshid=YmMyMTA2M2Y%3D">Hiatus Software</a>
+                    </div>
+                </div>
+                <div class="c">
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="icon fa-regular fa-envelope-open"></i></a>
+                    <div class="a">
+                        <a href="https://mail.google.com/mail/u/0/#inbox">E-mail adresi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- İletişim Finish -->
+     <script src="app.js"></script>
+
+     <!-- Body kapanışından önce ekle -->
+<footer class="site-footer">
+    <div class="footer-column">
+        <h4>Hakkımızda</h4>
+        <p>10 yıllık tecrübemizle en iyi hizmeti sunuyoruz</p>
+    </div>
+    <div class="footer-column">
+        <h4>Kategoriler</h4>
+        <ul>
+            <li><a href="#">Buzdolapları</a></li>
+            <li><a href="#">Fırınlar</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>Güvenlik</h4>
+        <img src="ssl-logo.png" alt="SSL Sertifikası">
+    </div>
+</footer>
+</body>
+</html>
